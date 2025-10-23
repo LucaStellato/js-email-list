@@ -5,8 +5,9 @@ for(let i=0; i<10; i++){
 .then((res)=>{
    console.log(res.data.response)
     const mail= res.data.response
-
-
+    const li= document.createElement('li')
+    li.textContent=mail;
+    listaEl.appendChild(li)
 
 
 })
